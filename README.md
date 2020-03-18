@@ -1,6 +1,8 @@
 # MREDTools
 
-A collection of modules to help MRED users
+A collection of modules to help MRED users.
+
+Recommend putting these in a directory such as `/home/<username>/.py` and adding that to the python path (put `export PYTHONPATH="${PYTHONPATH}:/home/<username>/.py/"` in your `.bashrc` or `.bash_profile` file)
 
 
 parsers.py
