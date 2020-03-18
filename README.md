@@ -32,7 +32,7 @@ option flag &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp
 --beamType | directionalFlux | defines the particle beam flux option. Options include directionalFlux, pointSource, isotropicFlux, and others
 --waferMat | silicon | defines the material of the wafer 
 --runName | defaultRunName20200317.234513 |  defines the run name
---saveDir | <currentDirectory/outputData/ |the directory path for saving output data from the run
+--saveDir | <currentDirectory>/outputData/ |the directory path for saving output data from the run
 --beamE | 1. | defines the particle beam energy in MeV. Defaults to 1 MeV
 --beamTilt | 0. | defines the particle beam tilt (polar angle) in degrees
 --beamRoll | 0. | defines the particle beam roll (azimuthal angle)  in degrees
