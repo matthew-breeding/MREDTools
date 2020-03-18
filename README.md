@@ -145,7 +145,7 @@ From the comments in `mredHdf5.py`:
 hdf5Cleanup.py
 ============
 
-This is a python executable that collects all of the .hdf5 files in the current directory and combines all of the histograms across those files into one combined HDF5 output file. The file is saved by default in a directory called `combinedHDF5output`, with a file name of the format `xxxxxxTOTAL.hdf5`. This using MRED, so on ACCRE machines you must `module load mred` prior to use.
+This is a python executable that collects all of the .hdf5 files in the current directory and combines all of the histograms across those files into one combined HDF5 output file. The file is saved by default in a directory called `combinedHDF5output`, with a file name of the format `xxxxxxTOTAL.hdf5`. This uses MRED, so on ACCRE machines you must `module load mred` prior to use.
 
 The output file name and directory can be explicitly specified at the command line using the flags `--saveName` and `--saveDir` respectively. 
 
