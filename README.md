@@ -161,4 +161,8 @@ This executable is used to setup batch submissions on the cluster. It is 95% the
 
 `~/path/to/mredBatch.py --runName=simulationRunName --rumTime=86400 --nCopies=10 mred -f --init simulationScript.py --saveDir=/path/to/saveDir/ --nIons=1000000 --nSaves=10  ## etc... with run option flags`
 
-It is oftentimes more efficient to put a bunch of these commands in one file and submit all at once. 
+It is oftentimes more efficient to put a bunch of these commands in one file and submit all at once.
+
+If the `--runName` flag is set for the batch options, it does not need to be set again for the MRED options. 
+
+See the comments in script for a full list of improvements. 
