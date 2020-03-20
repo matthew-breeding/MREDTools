@@ -11,8 +11,8 @@
 ## 	given histogram object iff the y values are non-zero in that bin.
 import os, shutil, tarfile
 
-def tarFile(fileToTar):
-    with tarfile.open(fileToTar, "w:gz") as tar:
+def tarFile(fileToTar, tarName):
+    with tarfile.open(tarName, "w:gz") as tar:
 	tar.add(fileToTar, arcname = os.path.basename(fileToTar))
 
 ## compresses and removes the most recent valid .hdf5 file. Used in hdf5RunManager
@@ -27,7 +27,7 @@ def tarFileForRunManager(hdf5File, options):
     """
     outputFilename = hdf5File.split(".hdf5")[0] + ".tar.gz"
 
-    tarFile(outputFilename)
+    tarFile(hdf5File, outputFilename)
 
     if os.path.isfile(outputFilename) and os.path.isfile(hdf5File):
 	os.remove(hdf5File)
